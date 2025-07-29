@@ -56,7 +56,11 @@ export function AuthPage() {
       if (isLogin) {
         const { error } = await signIn(email, password)
         if (error) {
-          setErrors({ general: 'Неверный email или пароль' })
+          if (error.message.includes('invalid_credentials') || error.message.includes('Invalid login credentials')) {
+            setErrors({ general: 'Неверный email или пароль. Если у вас нет аккаунта, пожалуйста, зарегистрируйтесь.' })
+          } else {
+            setErrors({ general: error.message || 'Ошибка при входе' })
+          }
           return
         }
       } else {
