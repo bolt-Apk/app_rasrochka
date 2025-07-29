@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Plus, Car, FileText, BarChart3, Edit, Trash2 } from 'lucide-react'
+import { Plus, Car as CarIcon, FileText, BarChart3, Edit, Trash2 } from 'lucide-react'
 import { MobileLayout } from '../components/layout/MobileLayout'
 import { Button } from '../components/ui/Button'
 import { Card, CardContent, CardHeader } from '../components/ui/Card'
@@ -102,7 +102,7 @@ export function AdminPage() {
           <div className="grid grid-cols-2 gap-4 mb-6">
             <Card>
               <CardContent className="p-4 text-center">
-                <Car className="w-8 h-8 text-primary-600 mx-auto mb-2" />
+                <CarIcon className="w-8 h-8 text-primary-600 mx-auto mb-2" />
                 <p className="text-2xl font-bold text-gray-900">{stats.totalCars}</p>
                 <p className="text-sm text-gray-600">Автомобилей</p>
               </CardContent>
@@ -209,7 +209,7 @@ export function AdminPage() {
                 </div>
               ) : (
                 <div className="text-center py-6">
-                  <Car className="w-12 h-12 text-gray-300 mx-auto mb-3" />
+                  <CarIcon className="w-12 h-12 text-gray-300 mx-auto mb-3" />
                   <p className="text-gray-500">Автомобили не добавлены</p>
                 </div>
               )}
