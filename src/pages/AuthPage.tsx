@@ -186,7 +186,7 @@ export function AuthPage() {
           <div className="mt-6 p-3 bg-gray-50 rounded-lg">
             <p className="text-xs text-gray-600 mb-2">Демо-аккаунты:</p>
             <div className="space-y-1 text-xs">
-              <p><strong>Админ:</strong> admin@autorассрочка.ru / admin123</p>
+              <p><strong>Админ:</strong> admin@autorassrochka.ru / admin123</p>
               <p><strong>Клиент:</strong> user@example.com / user123</p>
             </div>
           </div>

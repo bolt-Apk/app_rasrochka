@@ -49,7 +49,7 @@ export function useAuth() {
   }
 
   const isAdmin = () => {
-    return user?.email === 'admin@autorассрочка.ru' || 
+    return user?.email === 'admin@autorassrochka.ru' || 
            user?.user_metadata?.role === 'admin'
   }
 
