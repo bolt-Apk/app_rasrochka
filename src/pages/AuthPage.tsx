@@ -183,11 +183,11 @@ export function AuthPage() {
           </div>
 
           {/* Demo credentials */}
-          <div className="mt-6 p-3 bg-gray-50 rounded-lg">
-            <p className="text-xs text-gray-600 mb-2">Демо-аккаунты:</p>
-            <div className="space-y-1 text-xs">
-              <p><strong>Админ:</strong> admin@autorassrochka.ru / admin123</p>
-              <p><strong>Клиент:</strong> user@example.com / user123</p>
+          <div className="mt-6 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
+            <p className="text-xs text-yellow-800 mb-2">💡 Для тестирования:</p>
+            <div className="space-y-1 text-xs text-yellow-700">
+              <p>Сначала зарегистрируйте тестовый аккаунт</p>
+              <p>или создайте пользователей в Supabase Dashboard</p>
             </div>
           </div>
         </CardContent>
