@@ -8,7 +8,7 @@ import { LoadingCard } from '../components/ui/LoadingSpinner'
 import { useCars } from '../hooks/useCars'
 import { useLoanApplications } from '../hooks/useLoanApplications'
 import { useAuth } from '../hooks/useAuth'
-import { Car } from '../lib/supabase'
+import type { Car } from '../lib/supabase'
 import { formatPrice } from '../lib/utils'
 
 export function AdminPage() {
